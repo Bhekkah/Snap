@@ -1,0 +1,170 @@
+main {
+    width: 100%;
+    height: calc(100vh-60px);
+    margin-top: 120px;
+    display: flex;
+    justify-content: left;
+    margin-left: 180px;
+    padding: 0px;
+}
+.learnmore-btn {
+        width: 150px;
+        height: 50px;
+        background-color: hsl(0, 0%, 8%);
+        font-size: 18px;
+        line-height: 22px;
+        font-family: "Work Sans", serif;
+        color: hsl(0, 0%, 98%);
+        border-radius: 14px;
+        cursor: pointer;
+}
+
+.main-hero-left img {
+    width: 75px;
+    height: 25px;
+    background-color:  hsl(0, 0%, 98%);
+    padding-left: 30px;
+    float: left;
+    display: inline;
+}
+.main-hero-right img {
+    max-width: 100%;
+    height: 490px;
+    background-color:  hsl(0, 0%, 98%);
+    padding-left: 200px;
+    display: right; 
+}
+
+
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 1000;
+    background-color: hsl(0, 0%, 100%);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start ;
+}
+.sidebar li {
+    list-style: none ;
+    width: 100%;
+    display: inline;
+    float: left;
+    position: relative;
+    padding-left: 30px;
+    padding-top: 20px;
+    
+}
+
+.sidebar li a img {
+    width: fit-content;
+    height: fit-content;
+    padding-right: 10px;
+    display: inline;
+    position: relative;
+    }
+    
+    .sidebar li a:hover {
+        background-color: hsla(0, 0%, 41%, 0.1);
+        width: 120px;
+    }
+    
+    .sidebar li ul {
+        display: none;
+    }
+
+    .sidebar li:hover ul {
+        display: block;
+    }
+    .sidebar li ul li {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    
+    .sidebar li ul li a img{
+        width: fit-content;
+        height: 30%;
+        padding-right: 10px;
+        display: inline;
+    }
+
+    .sidebar li ul li a:hover {
+        background-color: hsla(0, 0%, 41%, 0.1);
+    }
+
+    .sidebar-extra a {
+        display: flex;
+        padding-left: 90px;
+        padding-top: 30px; 
+        border-radius: 10px; 
+        
+    }
+
+    .menu-button {
+        display: none;
+
+    }
+
+
+
+    
+    @media screen and (max-width: 800px) {
+        .hideOnMobile{
+            display: none;
+        }
+        .menu-button{
+            display: block;
+        }
+    }
+    
+    
+    
+    @media screen and (min-width: 600px) {
+    
+        h1 {
+            font-size: 80px;
+            line-height: 60px;
+            color: hsl(0, 0%, 8%);
+            font-family: "Work Sans", serif;
+            font-weight: 650;
+            display: flex;
+        }
+        p {
+            font-size: 18px;
+            line-height: 22px;
+            color: hsl(0, 0%, 41%);
+            font-family: "Work Sans", serif;
+            display: flex;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        }
+    
+        h1 {
+            font-size: 80px;
+            line-height: 60px;
+            color: hsl(0, 0%, 8%);
+            font-family: "Work Sans", serif;
+            font-weight: 650;
+            display: flex;
+        }
+        p {
+            font-size: 18px;
+            line-height: 22px;
+            color: hsl(0, 0%, 41%);
+            font-family: "Work Sans", serif;
+            display: flex;
+        }
+
+    
+    
